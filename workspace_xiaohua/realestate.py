@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import scipy.stats as stats
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
+
 
 pd.set_option('display.float_format', lambda x: '%.10f' % x)
 
@@ -36,6 +38,12 @@ fvalue, pvalue = stats.f_oneway(df_average['price'], df_excellent['price'], df_f
 view is significant and or if some of the views are not significant between each other. Ad-Hoc tests will need to be
 performed to determine which views are.'''
 
+#getting on the values we want
+view_mean_std = df_copy.groupby('view').agg(['mean', 'std'])
+
+#Tukey test
+print(pairwise_tukeyhsd(df_copy['view'], df_copy['price']))
+
 ' Is there a difference between grades'
 
 grade_count = df_copy.grade.value_counts()
@@ -56,10 +64,8 @@ df_7 = df_copy[df_copy['grade'] == '7 Average']
 df_8 = df_copy[df_copy['grade'] == '8 Good']
 df_9 = df_copy[df_copy['grade'] == '9 Better']
 
-f_value_grade, p_value_grade = stats.f_oneway(df_10['price'], df_11['price'], df_12['price'],
-                                df_4['price'] , df_5['price'], df_6['price'], df_7['price'],df_8['price'],
-                                              df_9['price'])
-
-print(p_value_grade)
+#f_value_grade, p_value_grade = stats.f_oneway(df_10['price'], df_11['price'], df_12['price'],
+#                                df_4['price'] , df_5['price'], df_6['price'], df_7['price'],df_8['price'],
+#                                              df_9['price'])
 '''There is a significant difference in price betweeen grades but we don't know which one is significant.\
 Further testing required to determine which is important'''
