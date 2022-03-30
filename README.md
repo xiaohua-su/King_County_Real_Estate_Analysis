@@ -1,4 +1,11 @@
-# Analysis of Real Estate
+![img](./images/kc_header.png)
+
+# Analysis of King County Real Estate Data
+
+**Authored by:**
+- Luke Dowker [(github)](https://github.com/toastdeini)
+- Jawwad Siddiqui [(github)](https://github.com/jsiddiqui85)
+- Xiaohua Su [(github)](https://github.com/xiaohua-su)
 
 ## Overview
 
@@ -12,6 +19,14 @@
 
 ## Conclusions
 
+1. `sqft_living`
+2. `grade` 
+3. `view`
+
 ## Next Steps
 
-## For additional Information
+1. `waterfront`
+2. `zipcode`
+3. 
+
+### Additional information and citations
