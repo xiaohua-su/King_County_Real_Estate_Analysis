@@ -4,7 +4,7 @@
 
 **Authored by:**
 - Luke Dowker [(Github)](https://github.com/toastdeini) | [(LinkedIn)](https://www.linkedin.com/in/luke-dowker/)
-- Jawwad Siddiqui [(Github)](https://github.com/jsiddiqui85) | [(LinkedIn)]()
+- Jawwad Siddiqui [(Github)](https://github.com/jsiddiqui85) | [(LinkedIn)](https://www.linkedin.com/in/jsiddiqui85/)
 - Xiaohua Su [(Github)](https://github.com/xiaohua-su) | [(LinkedIn)]()
 
 ## Overview
@@ -13,7 +13,7 @@ The COVID-19 pandemic has thrust residential real estate markets across the Unit
 
 ## Business Problem
 
-Home builders and contractors want to get in on the housing boom, but they want to minimize financial risk when it comes to their designs and constructions. They have tasked us with assessing which **features** of a house best predict its final sale price.
+Home builders and contractors want to get in on the housing boom, but they want to minimize financial risk when it comes to their designs and constructions. They have tasked us with assessing which **features** of a house best predict its final sale price, in order to maximize their return on investment.
 
 ## Data
 
@@ -27,10 +27,25 @@ Our **target variable** `X` - i.e. what we are **trying to predict** - is the sa
 
 ## Results
 
-- r-squared values for various models
-    - train score
-    - test score
-    - train RMSE
+- Dummy/baseline model, using `sqft_living
+    - train score: ``
+    - test score: ``
+    - train RMSE: ``
+    - test RMSE: ``
+- Simple linear model: `sqft_living`
+    - train score:
+    - test score:
+    - train RMSE:
+    - test RMSE:
+- Iterative model #1: `sqft_living` + (`view`/`grade`)
+    - train score:
+    - test score:
+    - train RMSE:
+    - test RMSE:
+- Iterative model #2: `sqft_living` + `view` + `grade`
+    - train score:
+    - test score:
+    - train RMSE:
     - test RMSE
 - p- and f-values to determine significances of models and features
 
@@ -42,8 +57,8 @@ Our **target variable** `X` - i.e. what we are **trying to predict** - is the sa
 
 ## Next Steps
 
-1. `waterfront`
-2. `zipcode`
+1. Exploratory data analysis & descriptive statistics reveal that the mean price for a `waterfront` property 
+2. While the data stored in `zipcode` was not useful for the purposes of our modeling workflow, visualizing 
 3. `sqft_basement`? `yr_renovated` (use `MissingIndicator` in sklearn)
 
 ### Additional information and citations
