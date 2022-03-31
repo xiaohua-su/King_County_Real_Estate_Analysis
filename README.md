@@ -3,9 +3,9 @@
 # Analysis of King County Real Estate Data
 
 **Authored by:**
-- Luke Dowker [(Github)](https://github.com/toastdeini) | [LinkedIn)](https://www.linkedin.com/in/luke-dowker/)
-- Jawwad Siddiqui [(Github)](https://github.com/jsiddiqui85) | [LinkedIn)]()
-- Xiaohua Su [(Github](https://github.com/xiaohua-su) | [LinkedIn)]()
+- Luke Dowker [(Github)](https://github.com/toastdeini) | [(LinkedIn)](https://www.linkedin.com/in/luke-dowker/)
+- Jawwad Siddiqui [(Github)](https://github.com/jsiddiqui85) | [(LinkedIn)]()
+- Xiaohua Su [(Github)](https://github.com/xiaohua-su) | [(LinkedIn)]()
 
 ## Overview
 
@@ -13,13 +13,13 @@ The COVID-19 pandemic has thrust residential real estate markets across the Unit
 
 ## Business Problem
 
-Home builders and contractors want to get in on the housing boom, but they want their designs and 
+Home builders and contractors want to get in on the housing boom, but they want to minimize financial risk when it comes to their designs and constructions. They have tasked us with assessing which **features** of a house best predict its final sale price.
 
 ## Data
 
 ![img](./images/kc_map.png)
 
-The data used in this project covers home sales in King County, WA for a period spanning from May 2014 to May 2015. In addition to providing basic information about the sale itself - each house has a unique `id` value, and each record contains a value for `date` and `price` - the dataset lists various attributes of each home: whether it's on a `waterfront`, the `grade` of its build and materials, whether it has a scenic `view`, the year of its renovation (`yr_renovated`, where applicable), among others.
+The data used in this project covers home sales in King County, WA for a period spanning from May 2014 to May 2015. In addition to providing basic information about the sale itself - each house has a unique `id` value, and each record contains a value for `date` and `price` - the dataset lists various attributes of each home: whether it's on a `waterfront`, the `grade` of its build and materials, the `condition` of the home, whether it has a scenic `view`, the year of its renovation (`yr_renovated`, where applicable), among others.
 
 ## Methods
 
@@ -36,7 +36,7 @@ Our **target variable** `X` - i.e. what we are **trying to predict** - is the sa
 
 ## Conclusions
 
-1. `sqft_living` - There's no need to construct mansions left and right, as there *are* diminishing returns to livable square footage past a certain point, but 
+1. `sqft_living` - There's no need to construct mansions in order to fetch a high sale price, as there *are* diminishing returns to livable square footage past a certain point, but 
 2. `grade` - Ensuring that a house is built from high-quality materials, and constructed by competent professionals, will yield a
 3. `view` - Buyers love a scenic view, and while homes with "excellent" views yield the highest sale prices on average, even a "good" or "average" view tends to make the property more valuable than a home *without* a view.
 
