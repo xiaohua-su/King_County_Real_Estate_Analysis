@@ -23,7 +23,7 @@ The data used in this project covers home sales in King County, WA for a period 
 
 ## Methods
 
-Our **target variable** `X` - i.e. what we are **trying to predict** - is the sale price of a home, represented under the column `price` in the dataset.
+Our **target variable** `y` - i.e. what we are **trying to predict** - is the sale price of a home, represented under the column `price` in the dataset.
 
 ## Results
 
