@@ -11,7 +11,9 @@
 
 ## Overview
 
-The COVID-19 pandemic has [thrust residential real estate markets across the United States](https://www.curbed.com/article/inside-the-covid-19-housing-market-of-upstate-new-york.html) into near-perpetual "seller's market" status, and Seattle's relatively newfound position as a "tech hub" has [driven up the city's population](https://www.seattletimes.com/seattle-news/data/covid-slowed-but-didnt-stop-population-growth-in-seattle-washington-hits-7-7m-residents/) (and cultural cache!) substantially in the last decade. This places our client, **UNIQUE Home Construction, LLC**, in a position 
+The COVID-19 pandemic has [thrust residential real estate markets across the United States](https://www.curbed.com/article/inside-the-covid-19-housing-market-of-upstate-new-york.html) into near-perpetual "seller's market" status, and Seattle's relatively newfound position as a "tech hub" has [driven up the city's population](https://www.seattletimes.com/seattle-news/data/covid-slowed-but-didnt-stop-population-growth-in-seattle-washington-hits-7-7m-residents/) (and cultural cache!) substantially in the last decade.
+
+UNIQUE Home Construction, LLC seeks to understand what **features** or **attributes** of a home best predict **sale price**. We examine a dataset from King County, WA that contains records for single-family home sales between May 2014 and May 2015. Using tools like pandas and scikit-learn, we developed several models to determine which features are the best predictors of a property's sale price, then included those features - `sqft_living`, `grade`, and `view` - in our final recommendations.
 
 ## Business Problem
 
@@ -33,20 +35,20 @@ Our **target variable** `y` - i.e. what we are **trying to predict** - is the sa
 
 ### `sqft_living`
 
-We can readily observe a linear relationship between `sqft_living` and sale `price`. We dropped outliers (homes with `sqft_living` and `price` values above the 75th percentile in their respective categories) in order to refine 
+We can readily observe a linear relationship between `sqft_living` and sale `price`. We dropped outliers (homes with `sqft_living` and `price` values above the 75th percentile in their respective categories) in order to refine our dataset. We recommend building homes with livable square footage ranging between roughly 1,500 and 3,000 square feet. 
 
 ![img](./images/sqftliving.png)
 
 
 ### `grade`
 
-Building homes out of higher quality materials (
+As the quality of `grade` increases - e.g. from `Low` to `Fair`, and in each step thereafter - we see corresponding increases in sale `price`. Statistical testing demonstrated significant differences in each `grade` level at an alpha value of 0.05, with the lone exception being the difference between `Very Good` and `Excellent` grades. In short: Building homes from higher quality materials drives up `price`!
 
 ![img](./images/grade.png)
 
 ### `view`
 
-Homes with an `EXCELLENT` view 
+We found a significant difference between homes with an `EXCELLENT` view and homes with *no* view (`NONE`), but difference in `price` between each step (e.g. `NONE` to `AVERAGE`) varies. **Visually**, there are differences in sale price between `NONE` and `AVERAGE`, and between `GOOD` and `EXCELLENT` -- but the differences between `AVERAGE`, `FAIR`, and `GOOD` are more difficult to suss out.
 
 ![img](./images/view.png)
 
@@ -78,21 +80,25 @@ Homes with an `EXCELLENT` view
 
 ## Repository Structure
 ```
-├── Workspace_Jawwad
-│       ├── EDA of Real Estate.ipynb
-│       ├── Train Test Split.ipynb
-│       └── Workspace_Jawwad.ipynb
-├── Workspace_Luke
-│       ├── Analysis_Notebook_Luke.ipynb
-│       └── Initial_EDA_Luke.ipynb
-├── Workspace_Xiaohua
-│       ├── Xiaohua.ipynb
-│       └── Untitled.ipynb
+├── Workspace_Notebooks  
+│       ├── Workspace_Luke
+│           ├── Analysis_Notebook_Luke.ipynb
+│           └── Initial_EDA_Luke.ipynb
+│       ├── Workspace_Jawwad
+│           ├── EDA of Real Estate.ipynb
+│           ├── Train Test Split.ipynb
+│           └── Workspace_Jawwad.ipynb
+│       └── Workspace_Xiaohua
+│           ├── scratchwork_etc.ipynb
+│           ├── Tukey_test_draft.ipynb
+│           └── Xiaohua_EDA.ipynb
 │
 ├── data
 ├── images
 ├── README.md
+├── king_county_real_estate_presentation.pdf
 └── King_County_Real_Estate_Analysis.ipynb
+
 ```
 ### Additional information and citations
 
