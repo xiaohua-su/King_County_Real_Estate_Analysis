@@ -7,7 +7,7 @@
 **Authored by:**
 - Luke Dowker [(Github)](https://github.com/toastdeini) | [(LinkedIn)](https://www.linkedin.com/in/luke-dowker/)
 - Jawwad Siddiqui [(Github)](https://github.com/jsiddiqui85) | [(LinkedIn)](https://www.linkedin.com/in/jsiddiqui85/)
-- Xiaohua Su [(Github)](https://github.com/xiaohua-su) | [(LinkedIn)]()
+- Xiaohua Su [(Github)](https://github.com/xiaohua-su) | [(LinkedIn)](https://www.linkedin.com/in/xiaohua-su/)
 
 ## Overview
 
@@ -51,14 +51,14 @@ Our **target variable** `y` - i.e. what we are **trying to predict** - is the sa
     - test RMSE
 - p- and f-values to determine significances of models and features
 
-## Conclusions - Where to Focus
+## Conclusions: Where to Focus!
 
 ![img](./images/new_build.png)
 
 (image courtesy of [Al Jazeera](https://www.aljazeera.com/))
 
-1. `sqft_living` - There's no need to construct mansions in order to fetch a high sale price, as there *are* diminishing returns to livable square footage past a certain point, but we find a notable correlation 
-2. `grade` - As yonsuring that a house is built from high-quality materials, and constructed by competent professionals, will yield a 
+1. `sqft_living` - There's no need to construct mansions in order to fetch a high sale price, as there *are* diminishing returns on price vs. livable square footage past a certain point, but recommend building 
+2. `grade` - Ensuring that a house is built from high-quality materials, and constructed by competent professionals, will yield a higher sale price than "cutting corners" in the construction.
 3. `view` - Buyers love a scenic view, and while homes with "excellent" views yield the highest sale prices on average, even a "good" or "average" view tends to make the property more valuable than a home *without* a view.
 
 ## Next Steps
@@ -68,14 +68,14 @@ Our **target variable** `y` - i.e. what we are **trying to predict** - is the sa
 3. `sqft_basement`? `yr_renovated` (use `MissingIndicator` in sklearn)
 
 ## Repository Structure
-
+`
 ├── Workspace_Jawwad
-│       └── EDA of Real Estate.ipynb
-│       └── Train Test Split.ipynb
+│       ├── EDA of Real Estate.ipynb
+│       ├── Train Test Split.ipynb
 │       └── Workspace_Jawwad.ipynb
 ├── Workspace_Luke
-|       └── Analysis_Notebook_Luke.ipynb
-|       └── Initial_EDA_Luke.ipynb
+│       ├── Analysis_Notebook_Luke.ipynb
+│       └── Initial_EDA_Luke.ipynb
 ├── Workspace_Xiaohua
 │       ├── Xiaohua.ipynb
 │       └── Untitled.ipynb
@@ -83,9 +83,13 @@ Our **target variable** `y` - i.e. what we are **trying to predict** - is the sa
 ├── data
 ├── images
 ├── README.md
-└── King_County_Real_Estate_Analysis.ipynb
+└── King_County_Real_Estate_Analysis.ipynb`
 
 ### Additional information and citations
+
+- Full analysis available in the project [Jupyter notebook]()
+- Stakeholder-facing [presentation]()
+
 
 ["Inside the Freak-out Housing Market of Upstate New York"](https://www.curbed.com/article/inside-the-covid-19-housing-market-of-upstate-new-york.html)
 
