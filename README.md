@@ -30,16 +30,16 @@ Our **target variable** `y` - i.e. what we are **trying to predict** - is the sa
 ## Results
 
 - Dummy/baseline model, using `sqft_living
-    - train score: ``
-    - test score: ``
-    - train RMSE: ``
-    - test RMSE: ``
+    - train score: 
+    - test score: 
+    - train RMSE: 
+    - test RMSE: 
 - Simple linear model: `sqft_living`
     - train score:
     - test score:
     - train RMSE:
     - test RMSE:
-- Iterative model #1: `sqft_living` + (`view`/`grade`)
+- Final model: `sqf
     - train score:
     - test score:
     - train RMSE:
@@ -68,7 +68,7 @@ Our **target variable** `y` - i.e. what we are **trying to predict** - is the sa
 3. `sqft_basement`? `yr_renovated` (use `MissingIndicator` in sklearn)
 
 ## Repository Structure
-`
+```
 ├── Workspace_Jawwad
 │       ├── EDA of Real Estate.ipynb
 │       ├── Train Test Split.ipynb
@@ -83,8 +83,8 @@ Our **target variable** `y` - i.e. what we are **trying to predict** - is the sa
 ├── data
 ├── images
 ├── README.md
-└── King_County_Real_Estate_Analysis.ipynb`
-
+└── King_County_Real_Estate_Analysis.ipynb
+```
 ### Additional information and citations
 
 - Full analysis available in the project [Jupyter notebook]()
