@@ -17,7 +17,7 @@ UNIQUE Home Construction, LLC seeks to understand what **features** or **attribu
 
 ## Business Problem
 
-A boutique residential contractor - [Unique Home Construction, LLC](https://www.uniquehomeco.com/) - has tasked us with assessing which **features** of a house best predict its final sale price. They are looking to minimize the **risk** involved in constructing new builds without compromising features that are important to customers.
+A boutique residential contractor - **"Unique Home Construction, LLC"** - has tasked us with assessing which **features** of a house best predict its final sale price. They are looking to minimize the **risk** involved in constructing new builds without compromising features that are important to customers.
 
 In other words, what attributes or features of a property should UNIQUE Home Construction, as custom home builders, focus on when constructing new homes?
 
@@ -46,17 +46,19 @@ As the quality of `grade` increases - e.g. from `Low` to `Fair`, and in each ste
 
 ![img](./images/grade.png)
 
+
 ### `view`
 
-We found a significant difference between homes with an `EXCELLENT` view and homes with *no* view (`NONE`), but difference in `price` between each step (e.g. `NONE` to `AVERAGE`) varies. **Visually**, there are differences in sale price between `NONE` and `AVERAGE`, and between `GOOD` and `EXCELLENT` -- but the differences between `AVERAGE`, `FAIR`, and `GOOD` are more difficult to suss out.
+We found a significant difference between homes with an `EXCELLENT` view and homes with *no* view (`NONE`), but difference in `price` between each step (e.g. `NONE` to `AVERAGE`) varies. **Visually**, there are differences in sale price between `NONE` and `AVERAGE`, and between `GOOD` and `EXCELLENT` -- but the differences between `AVERAGE`, `FAIR`, and `GOOD` are more difficult to tease out.
 
 ![img](./images/view.png)
+
 
 ### Final model
 
 - **Train score:** `0.396`
 - **Test score:** `0.395`
-    - These values describe the **percentage of variance** in the dependent variable (`price`) that is explained by our **final model**.
+    - These values describe the **percentage of variance** in `price` that is explained by our **final model**. Our model performs about equally on both the train and test data sets.
     
 - **Train RMSE:** `138796.17` (US dollars)
 - **Test RMSE:** `141271.64` (US dollars)
@@ -98,12 +100,11 @@ We found a significant difference between homes with an `EXCELLENT` view and hom
 ├── README.md
 ├── king_county_real_estate_presentation.pdf
 └── King_County_Real_Estate_Analysis.ipynb
-
 ```
 ### Additional information and citations
 
-- Full analysis available in the project [Jupyter notebook]()
-- Stakeholder-facing [presentation]()
+- Full analysis available in the project [Jupyter notebook](https://github.com/xiaohua-su/King_County_Real_Estate_Analysis/blob/main/King_County_Real_Estate_Analysis.ipynb)
+- Stakeholder-facing [presentation](https://github.com/xiaohua-su/King_County_Real_Estate_Analysis/blob/main/king_county_real_estate_presentation.pdf)
 
 
 ["Inside the Freak-out Housing Market of Upstate New York"](https://www.curbed.com/article/inside-the-covid-19-housing-market-of-upstate-new-york.html)
