@@ -11,7 +11,7 @@
 
 ## Overview
 
-The COVID-19 pandemic has [thrust residential real estate markets across the United States](https://www.curbed.com/article/inside-the-covid-19-housing-market-of-upstate-new-york.html) into near-perpetual "seller's market" status, and Seattle's relatively newfound position as a "tech hub" has [driven up the city's population](https://www.seattletimes.com/seattle-news/data/covid-slowed-but-didnt-stop-population-growth-in-seattle-washington-hits-7-7m-residents/) (and cultural cache!) substantially in the last decade. This positions our client, **UNIQUE Home Construction, LLC**, 
+The COVID-19 pandemic has [thrust residential real estate markets across the United States](https://www.curbed.com/article/inside-the-covid-19-housing-market-of-upstate-new-york.html) into near-perpetual "seller's market" status, and Seattle's relatively newfound position as a "tech hub" has [driven up the city's population](https://www.seattletimes.com/seattle-news/data/covid-slowed-but-didnt-stop-population-growth-in-seattle-washington-hits-7-7m-residents/) (and cultural cache!) substantially in the last decade. This places our client, **UNIQUE Home Construction, LLC**, in a position 
 
 ## Business Problem
 
@@ -33,23 +33,32 @@ Our **target variable** `y` - i.e. what we are **trying to predict** - is the sa
 
 ### `sqft_living`
 
+We can readily observe a linear relationship between `sqft_living` and sale `price`. We dropped outliers (homes with `sqft_living` and `price` values above the 75th percentile in their respective categories) in order to refine 
+
 ![img](./images/sqftliving.png)
 
+
 ### `grade`
+
+Building homes out of higher quality materials (
 
 ![img](./images/grade.png)
 
 ### `view`
 
+Homes with an `EXCELLENT` view 
+
 ![img](./images/view.png)
 
 ### Final model
 
-- **Train score:**
-- **Test score:**
-- **Train RMSE:**
-- **Test RMSE:**
-
+- **Train score:** `0.396`
+- **Test score:** `0.395`
+    - These values describe the **percentage of variance** in the dependent variable (`price`) that is explained by our **final model**.
+    
+- **Train RMSE:** `138796.17` (US dollars)
+- **Test RMSE:** `141271.64` (US dollars)
+    - These values illustrate **how much we can expect our predictions to vary** from actual sale `price`.
     
 ## Conclusions: Where to Focus!
 
@@ -63,7 +72,7 @@ Our **target variable** `y` - i.e. what we are **trying to predict** - is the sa
 
 ## Next Steps
 
-1. Exploratory data analysis & descriptive statistics reveal that the mean price for a `waterfront` property is much higher than one without `waterfront` view - 
+1. Exploratory data analysis & descriptive statistics reveal that the mean price for a `waterfront` property is much higher than one without `waterfront` view - examining possibilities for waterfront construction can lead to further increases in sale
 2. While the data stored in `zipcode` was not useful for the purposes of our modeling workflow, visualizing sale price with mapping software can potentially identify
 3. Conduct more refined analysis on how `bedroom` and `bathroom` count can be optimized without "overbuilding" or constructing unnecessarily large properties.
 
