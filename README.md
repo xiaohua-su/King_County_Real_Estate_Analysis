@@ -84,12 +84,12 @@ We found a significant difference between homes with an `EXCELLENT` view and hom
 ```
 ├── Workspace_Notebooks  
 │       ├── Workspace_Luke
-│           ├── Analysis_Notebook_Luke.ipynb
-│           └── Initial_EDA_Luke.ipynb
+│       │   ├── Analysis_Notebook_Luke.ipynb
+│       │   └── Initial_EDA_Luke.ipynb
 │       ├── Workspace_Jawwad
-│           ├── EDA of Real Estate.ipynb
-│           ├── Train Test Split.ipynb
-│           └── Workspace_Jawwad.ipynb
+│       │   ├── EDA of Real Estate.ipynb
+│       │   ├── Train Test Split.ipynb
+│       │   └── Workspace_Jawwad.ipynb
 │       └── Workspace_Xiaohua
 │           ├── scratchwork_etc.ipynb
 │           ├── Tukey_test_draft.ipynb
